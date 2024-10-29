@@ -50,32 +50,18 @@
         <h1>HALLOWEEN NA CEU DIA 09 DE NOVEMBRO</h1>
     </div>
 
-    <audio id="meuAudio" autoplay muted>
-        <source src="exemplo.mp3" type="audio/mpeg">
+    <audio id="meuAudio">
+        <source src="arquivos/exemplo.mp3" type="audio/mpeg">
         Seu navegador não suporta a reprodução de áudio.
     </audio>
 
-    <script>
-        window.onload = function() {
-            const audio = document.getElementById('meuAudio');
-            audio.muted = false;  // Remove o mute
-            
-            // Tentar iniciar o áudio automaticamente
-            audio.play().then(() => {
-                console.log('Áudio reproduzido com sucesso!');
-            }).catch((error) => {
-                console.warn('Reprodução automática bloqueada. O usuário precisa interagir.', error);
-            });
-        };
-        
-    </script>
     <div>
     <button onclick="document.getElementById('meuAudio').play()">CLIQUE AQUI</button>
     </div>
     <div class = 'imagens' >
-        <img class = 'gif' src="4qh8.gif" alt="hallowenn gif">
-        <img class = 'gif' src="3a35.gif" alt="hallowenn gif">
-        <img class = 'gif' src="CcdP.gif" alt="hallowenn gif">
+        <img class = 'gif' src="arquivos/4qh8.gif" alt="hallowenn gif">
+        <img class = 'gif' src="arquivos/3a35.gif" alt="hallowenn gif">
+        <img class = 'gif' src="arquivos/CcdP.gif" alt="hallowenn gif">
     </div>
 </body>
 </html>

@@ -43,11 +43,25 @@
             display: flex;
             justify-content: space-around;
         }
+        span{
+                color: white
+            }
+        @media (400px > width) {
+            .imagens{
+                flex-direction: column;
+                align-items: center;
+                margin-top: 5px;
+            }
+            div{
+                margin-top: 0;
+            }
+            
+        }
     </style>
 </head>
 <body>
     <div>
-        <h1>HALLOWEEN NA CEU DIA 09 DE NOVEMBRO</h1>
+        <h1>HALLOWEEN NA CEU DIA <span>09</span> DE NOVEMBRO</h1>
     </div>
 
     <audio id="meuAudio">
